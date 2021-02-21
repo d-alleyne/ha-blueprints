@@ -24,7 +24,7 @@ This procedure assumes that Home Assistant version 2021.1.5 or newer is installe
 ## Blueprints
 Before installing any of the below blueprints, insure that the required integrations are installed in Home Assistant, and correctly configured. See [https://www.home-assistant.io/integrations/](https://www.home-assistant.io/integrations/) for more details. Configuration of the required integrations is beyond the scope of this documentation.
 
-| YAML File | Requirements |
+| Blueprint | Requirements |
 | --------- | --------------------- |
 |[Turn off Smart Life bulbs](turn_off_lights_with_canary.yaml)|[Tuya](https://www.home-assistant.io/integrations/tuya/),[Device Tracker](https://www.home-assistant.io/integrations/device_tracker/)|
 
