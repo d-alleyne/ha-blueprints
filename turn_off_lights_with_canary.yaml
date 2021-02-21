@@ -1,0 +1,31 @@
+blueprint:
+  name: Turn off Smart Life bulbs
+  description: Turn off Smart Life bulbs when power has returned after an outage.
+  domain: automation
+  input:
+    canary_device:
+      name: Canary Device
+      selector:
+        entity:
+          domain: device_tracker
+    target_light:
+      name: Target Lights
+      selector:
+        target:
+          entity:
+            domain: light
+            integration: tuya
+
+mode: restart
+max_exceeded: silent
+
+trigger:
+  platform: state
+  entity_id: !input canary_device
+  for: "00:01:00"
+  from: "not_home"
+  to: "home"
+
+action:
+- service: light.turn_off
+  target: !input target_light

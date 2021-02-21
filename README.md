@@ -1,5 +1,5 @@
-# ha-blueprints
-A repository of [Home Assistant](https://www.home-assistant.io/) [Blueprints](https://www.home-assistant.io/docs/automation/using_blueprints/) that I use.
+# Home Assistant Blueprints
+A repository of custom Home Assistant [Blueprints](https://www.home-assistant.io/docs/automation/using_blueprints/) that I use.
 
 ## Installation
 This procedure assumes that Home Assistant version 2021.1.5 or newer is installed on your device, and accessed from a Desktop/Laptop browser.
@@ -19,3 +19,12 @@ This procedure assumes that Home Assistant version 2021.1.5 or newer is installe
 - Paste the contents of the clipboard into the file
 - Click the red Save icon in the top right
 ![Save.png](docs/images/Save.png)
+
+
+## Blueprints
+Before installing any of the below blueprints, insure that the required integrations are installed in Home Assistant, and correctly configured. See [https://www.home-assistant.io/integrations/](https://www.home-assistant.io/integrations/) for more details. Configuration of the required integrations is beyond the scope of this documentation.
+
+| YAML File | Requirements |
+| --------- | --------------------- |
+|[Turn off Smart Life bulbs](turn_off_lights_with_canary.yaml)|[Tuya](https://www.home-assistant.io/integrations/tuya/),[Device Tracker](https://www.home-assistant.io/integrations/device_tracker/)|
+
